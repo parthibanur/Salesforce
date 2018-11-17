@@ -25,7 +25,7 @@ jobs:
            name: Authenticate DX Developer Hub
            command: |
                  echo $SFDX_DEVHUB_URL > ~/tmp/orgs/hub.auth
-                 sfdx force:auth:sfdxurl:store -f ~/tmp/orgs/hub.auth --setdefaultdevhubusername --setalias hub
+                 sfdx force:auth:sfdxurl:store -f ~/tmp/orgs/hub.auth --setdefaultdevhubusername --setalias DevHub
         
         - persist_to_workspace:
             root: ~/
